@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: UrlCutter
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  datasource:
+    url: jdbc:mysql://@65.109.124.163:3306/s891_test
+    username: u891_yPYlOYes9a
+    password: Zz3f6VG@D.K2LGBV2@bG!=go
+    driver-class-name: com.mysql.cj.jdbc.Driver
