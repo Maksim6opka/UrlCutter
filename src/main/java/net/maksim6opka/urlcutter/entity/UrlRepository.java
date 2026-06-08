@@ -9,5 +9,4 @@ public interface UrlRepository extends JpaRepository<Url, Long> {
     Optional<Url> findByOriginalUrl(String originalUrl);
 
     boolean existsByShortenedUrl(String shortenedUrl);
-    boolean existsByOriginalUrl(String originalUrl);
 }
