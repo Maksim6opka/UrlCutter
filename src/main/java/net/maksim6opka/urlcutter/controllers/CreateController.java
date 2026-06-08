@@ -20,7 +20,7 @@ public class CreateController {
     public CreateController(UrlRepository urlRepository) {
         this.urlRepository = urlRepository;
     }
-    @PostMapping("/")
+    @PostMapping("/short")
         public ResponseEntity<UrlCreateResponse> Create(
                 @RequestBody UrlCreateRequest request
         ) {

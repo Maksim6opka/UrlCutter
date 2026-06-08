@@ -16,7 +16,7 @@ public record UrlCreateResponse(
                 new UrlCreateData(
                         url.getId(),
                         url.getOriginalUrl(),
-                        url.getShortenedUrl(),
+                        "https://maksim6opka.net/short/" + url.getShortenedUrl(),
                         url.getCreatedAt()
                 )
         );
