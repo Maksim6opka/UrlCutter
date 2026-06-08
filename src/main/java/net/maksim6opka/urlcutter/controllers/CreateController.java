@@ -18,7 +18,7 @@ public class CreateController {
         this.urlService = urlService;
     }
 
-    @PostMapping("/")
+    @PostMapping("/short")
     public ResponseEntity<UrlCreateResponse> Create(
             @RequestBody UrlCreateRequest request
     ) {

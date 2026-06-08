@@ -31,6 +31,11 @@ public class UrlService {
         return urlRepository.save(url);
     }
 
+    public Optional<String> findOriginalUrlByShortUrl(String shortUrl) {
+        return urlRepository.findByShortenedUrl(shortUrl)
+                .map(Url::getOriginalUrl);
+    }
+    
     private String generateShortUrl() {
         String chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
         Random rng = new Random();
